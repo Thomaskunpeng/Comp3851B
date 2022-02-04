@@ -1,4 +1,5 @@
-# Comp3851B
+# Comp3851B(Wu Zheng)
+# The project members: Wuzheng, Yu Xiaorong, Xu Chenxi, Yang Yurui, Huang Xiaorong
 This web application will be the first source of information for 1st year students at the University of Newcastle. Students feel lost in the first few weeks of uni and sometimes, when they start understanding the dynamics of some of the internal processes, courses and assignments, the semester is already in week 6 or so. Here are some important points that could be addressed:
 Information about basic university services and where to find important information.
 Who is who in our Discipline, School and Faculty (a directory). Not for every academic, but for every position (Program Convenor, Head of School, etc).
