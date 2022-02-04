@@ -1,0 +1,87 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Website.master.cs" Inherits="Comp一号.Website" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="css/Website.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .masterHead {
+            position:relative;
+            height: 70px;
+            width: 100%;
+            background: rgb(50,50,50);
+            text-align:right;
+            top:0;
+            left:0;
+        }
+        .masterHead ul{
+            display:inline-block;
+            width: 700px;
+        }
+        .masterHead li {
+            color:rgb(243,243,243);
+            float:left; 
+            margin-right:10px;
+            font-weight:bold;
+            line-height:68px;
+            list-style-type:none;
+        }
+        .buttom {
+            height: 75px;
+            background: rgb(50,50,50);
+            width:100%;
+        }
+        .schoollabel {
+            width: 421px;
+            height: 55px;
+            position: relative;
+            left: 0px;
+            top: 10px;
+        }
+        .shizitou{
+            position:absolute;
+            top:0;
+            left:1px;
+            width: 160px;
+            height: 70px;
+            z-index:1;
+        }
+        .Website {
+            width:100%;
+            min-width:1056px;
+            overflow:hidden;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class ="Website">
+    <form id="form1" runat="server">
+        <div class="masterHead">
+            <img class="shizitou" src="/DL/images/狮子头.png" />
+            <div >
+                <ul class="nev">
+                    <li><a>Home </a></li>
+                    <li><a>CampusLiving </a></li>
+                    <li><a>InternationalStudent </a></li>
+                    <li><a>FreshmenGuide </a></li>
+                    <li><a>Support</a></li>
+                    <li><a>Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <footer id="buttom" class="buttom" bottom="0">
+            <img alt="学校" class="schoollabel" src="/DL/images/学校标签.png" />
+        </footer>
+    </form>
+</body>
+</html>
