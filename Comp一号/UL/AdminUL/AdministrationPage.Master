@@ -1,0 +1,174 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdministrationPage.master.cs" Inherits="Comp一号.UL.AdminUL.AdministrationPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .masterHead {
+            position: relative;
+            height: 70px;
+            width: 100%;
+            background: rgb(50,50,50);
+            text-align: right;
+            top: 10px;
+            left: 0;
+        }
+
+        .shizitou {
+            position: absolute;
+            top: 0;
+            left: 1px;
+            width: 160px;
+            height: 70px;
+            z-index: 1;
+        }
+
+        .Website {
+            width: 100%;
+            min-width: 1056px;
+            overflow: hidden;
+        }
+
+        body {
+            margin: 0px;
+        }
+
+        .header {
+            background-color: #ccc;
+            padding: 1px;
+        }
+
+        .wrap {
+            min-width: 1024px;
+            width: 100%;
+        }
+
+        .hLeft {
+            float: left;
+            border: 1px solid #999;
+            width: 18%;
+            height: 800px;
+            background: rgb(50,50,50);
+            color: white;
+            padding: 1px;
+        }
+
+        .hRight {
+            overflow: hidden;
+            border: 1px solid #999;
+            zoom: 1;
+            height: 800px;
+            border: 1px solid #999;
+            margin-left: 15%;
+        }
+
+        .touxiang {
+            background-color: rgb(50,50,50);
+            height: 120px;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        .list {
+            text-align: left;
+            width: 95%;
+            height: 50px;
+            background-color: rgb(50,50,50);
+            color: white;
+            padding-left: 10px;
+            line-height: 50px;
+            cursor: pointer;
+        }
+
+            .list:hover {
+                background-color: white;
+                color: black;
+            }
+
+        .UserName {
+            height: 20px;
+            text-align: center;
+            line-height: 60px;
+        }
+
+        .Adm {
+            width: 146px;
+            height: 118px;
+        }
+
+        .Logout {
+            position: absolute;
+            display: inline-block;
+            width: 100px;
+            color: white;
+            top: 30px;
+            right: 0;
+            font-weight: bold;
+            list-style-type: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="Website">
+            <div class="masterHead">
+                <img class="shizitou" src="/DL/images/狮子头.png" />
+            </div>
+            <ul class="Logout">
+                <li><a href="../UserLogin.aspx" style="color: white;">Log out </a></li>
+            </ul>
+            <div class="wrap">
+                <div class="hLeft">
+                    <div class="touxiang">
+                        <img class="Adm" src="/DL/images/Administrator.png" />
+                    </div>
+                    <div class="UserName" style="font-size: 15px; font-weight: bold">
+                        员工名字
+                    </div>
+                    <div class="UserName" style="font-size: 10px;">
+                        Administrator
+                    </div>
+                    <br>
+                    <a href="../AdminUL/UserAccount.aspx">
+                        <div class="list">UserAccount</div>
+                    </a>
+                    <a href="../AdminUL/CampisLiving.aspx">
+                        <div class="list">CampisLiving</div>
+                    </a>
+                    <a href="../AdminUL/InternationalStudent.aspx">
+                        <div class="list">InternationalStudent</div>
+                    </a>
+                    <a href="../AdminUL/FreshmenGuide.aspx">
+                        <div class="list">FreshmenGuide</div>
+                    </a>
+                    <a href="../AdminUL/ImportantNotice.aspx">
+                        <div class="list">ImportantNotice</div>
+                    </a>
+                    <a href="../AdminUL/Support.aspx">
+                        <div class="list">Support</div>
+                    </a>
+                    <a href="../AdminUL/Contact.aspx">
+                        <div class="list">Contact</div>
+                    </a>
+                    <a href="../AdminUL/Feedback.aspx">
+                        <div class="list">Feedback</div>
+                    </a>
+                </div>
+                <div class="hRight">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
