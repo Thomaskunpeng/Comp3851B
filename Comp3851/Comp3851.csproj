@@ -1,0 +1,529 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9D385B44-2C9A-42E9-8455-A20C10F95B87}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Comp一号</RootNamespace>
+    <AssemblyName>Comp一号</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44327</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CSS\Website.css" />
+    <Content Include="DL\images\feedBack.png" />
+    <Content Include="DL\images\HomeSupport.png" />
+    <Content Include="DL\images\alone.jpg" />
+    <Content Include="DL\images\alone2.jpg" />
+    <Content Include="DL\images\alone3.jfif" />
+    <Content Include="DL\images\Avatar.jpg" />
+    <Content Include="DL\images\BackgroundToDolist.jpg" />
+    <Content Include="DL\images\blackborad.png" />
+    <Content Include="DL\images\clock.png" />
+    <Content Include="DL\images\CLUB1.1.png" />
+    <Content Include="DL\images\CLUB1.png" />
+    <Content Include="DL\images\CLUB2.2.png" />
+    <Content Include="DL\images\CLUB2.png" />
+    <Content Include="DL\images\Course.png" />
+    <Content Include="DL\images\feebackimg.png" />
+    <Content Include="DL\images\guidance.png" />
+    <Content Include="DL\images\HeadNoticeForTODOLIST.jpeg" />
+    <Content Include="DL\images\HeadNoticeForTODOLIST2.jpeg" />
+    <Content Include="DL\images\home-icon.png" />
+    <Content Include="DL\images\hostel.png" />
+    <Content Include="DL\images\hostleFoot.jpg" />
+    <Content Include="DL\images\hostleFoot2.jpg" />
+    <Content Include="DL\images\hosue.png" />
+    <Content Include="DL\images\house_PNG11.png" />
+    <Content Include="DL\images\ICA.jfif" />
+    <Content Include="DL\images\ImportantnoticeBackground.jpg" />
+    <Content Include="DL\images\insurance.png" />
+    <Content Include="DL\images\insurance1.jpg" />
+    <Content Include="DL\images\insurance2.png" />
+    <Content Include="DL\images\insuranceIcon.png" />
+    <Content Include="DL\images\ISC.png" />
+    <Content Include="DL\images\ISC2.jpg" />
+    <Content Include="DL\images\lonely.jpg" />
+    <Content Include="DL\images\ME.jpg" />
+    <Content Include="DL\images\ME1.jpg" />
+    <Content Include="DL\images\ME2.jpg" />
+    <Content Include="DL\images\ME3.jpg" />
+    <Content Include="DL\images\ME4.png" />
+    <Content Include="DL\images\medical.png" />
+    <Content Include="DL\images\new-ica-building.jpg" />
+    <Content Include="DL\images\newsupport.png" />
+    <Content Include="DL\images\OIP-C.jfif" />
+    <Content Include="DL\images\Payment1.jpg" />
+    <Content Include="DL\images\Payment2.jpg" />
+    <Content Include="DL\images\Pencil.png" />
+    <Content Include="DL\images\PSB.png" />
+    <Content Include="DL\images\PTF.png" />
+    <Content Include="DL\images\QE2.jpg" />
+    <Content Include="DL\images\Questionmark.png" />
+    <Content Include="DL\images\SF.png" />
+    <Content Include="DL\images\SF1-1.jpg" />
+    <Content Include="DL\images\SF1-1.png" />
+    <Content Include="DL\images\SF1.jpg" />
+    <Content Include="DL\images\SF1.png" />
+    <Content Include="DL\images\SF2-2.jpg" />
+    <Content Include="DL\images\SF2-2.png" />
+    <Content Include="DL\images\SF2.jpg" />
+    <Content Include="DL\images\SF2.png" />
+    <Content Include="DL\images\SF3.jpg" />
+    <Content Include="DL\images\si.png" />
+    <Content Include="DL\images\SingaporeStudentVisa1.2.jpeg" />
+    <Content Include="DL\images\SingaporeStudentVisa1.jpg" />
+    <Content Include="DL\images\SingaporeStudentVisa2.1.png" />
+    <Content Include="DL\images\SingaporeStudentVisa2.2.png" />
+    <Content Include="DL\images\SingaporeStudentVisa2.png" />
+    <Content Include="DL\images\SingaporeStudentVisa3.1.png" />
+    <Content Include="DL\images\singapore_ica_passport_collection.jpg" />
+    <Content Include="DL\images\student-card-icon.png" />
+    <Content Include="DL\images\StudentCard.png" />
+    <Content Include="DL\images\StudentCard2.png" />
+    <Content Include="DL\images\StudentCardTop.png" />
+    <Content Include="DL\images\students.png" />
+    <Content Include="DL\images\STUDENTSERVERS.jpg" />
+    <Content Include="DL\images\StudentVisa.jpeg" />
+    <Content Include="DL\images\supports.png" />
+    <Content Include="DL\images\TCS.jpg" />
+    <Content Include="DL\images\Transparent.png" />
+    <Content Include="DL\images\WelcomeEvent.jpg" />
+    <Content Include="DL\images\WelcomeEvent2.jpg" />
+    <Content Include="DL\images\workshop-banner.png" />
+    <Content Include="DL\images\homepagePSB.png" />
+    <Content Include="DL\images\schoolbuilding.png" />
+    <Content Include="DL\images\HomeCampus.png" />
+    <Content Include="DL\images\宿舍.png" />
+    <Content Include="DL\images\课表.png" />
+    <Content Include="DL\images\Newcastlefooter.png" />
+    <Content Include="DL\images\homepagetrain.png" />
+    <Content Include="DL\images\Homebackground.png" />
+    <Content Include="DL\images\Administrator.png" />
+    <Content Include="DL\images\contactHead.png" />
+    <Content Include="DL\images\cutoffLine.png" />
+    <Content Include="DL\images\Homepagegrass2.png" />
+    <Content Include="DL\images\interStudent.png" />
+    <Content Include="DL\images\guides.png" />
+    <Content Include="DL\images\Cliving.png" />
+    <Content Include="DL\images\notices.png" />
+    <Content Include="DL\images\NewcastleHead.png" />
+    <Content Include="DL\images\Homepagegrass.png" />
+    <Content Include="DL\videos\dormitory%281%29.mp4" />
+    <Content Include="DL\videos\HalloweenEvent.mp4" />
+    <Content Include="DL\videos\UniversityofNewcastle.mp4" />
+    <Content Include="UL\Activity-student.aspx" />
+    <Content Include="UL\Activity.aspx" />
+    <Content Include="UL\AdminUL\Feedback.aspx" />
+    <Content Include="UL\AdminUL\打算删掉的管理页面.aspx" />
+    <Content Include="UL\AdminUL\CampisLiving.aspx" />
+    <Content Include="UL\AdminUL\Contact.aspx" />
+    <Content Include="UL\AdminUL\FreshmenGuide.aspx" />
+    <Content Include="UL\AdminUL\ImportantNotice.aspx" />
+    <Content Include="UL\AdminUL\InternationalStudent.aspx" />
+    <Content Include="UL\AdminUL\Support.aspx" />
+    <Content Include="UL\AdminUL\UserAccount.aspx" />
+    <Content Include="UL\Contact.aspx" />
+    <Content Include="UL\Facilities-bike.aspx" />
+    <Content Include="UL\Facilities-food.aspx" />
+    <Content Include="UL\Facilities-library.aspx" />
+    <Content Include="UL\Facilities-sportshall.aspx" />
+    <Content Include="UL\Facilities.aspx" />
+    <Content Include="UL\Feedback.aspx" />
+    <Content Include="UL\FreshmenGuidance.aspx" />
+    <Content Include="UL\Help.aspx" />
+    <Content Include="UL\Home.aspx" />
+    <Content Include="UL\IMPORTANTNOTICE.aspx" />
+    <Content Include="UL\INArticle.aspx" />
+    <Content Include="UL\InternationalStudent.aspx" />
+    <Content Include="UL\Registration.aspx" />
+    <Content Include="UL\Rule.aspx" />
+    <Content Include="UL\Scenery.aspx" />
+    <Content Include="UL\Schoollife.aspx" />
+    <Content Include="UL\Teacher-as.aspx" />
+    <Content Include="UL\Teacher-pc.aspx" />
+    <Content Include="UL\Teacher-pss.aspx" />
+    <Content Include="UL\Teacher.aspx" />
+    <Content Include="UL\Testimonials.aspx" />
+    <Content Include="UL\ToDoList.aspx" />
+    <Content Include="UL\打算删掉的主页尝试页面.aspx" />
+    <Content Include="UL\UserLogin.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UL\Activity-student.aspx.cs">
+      <DependentUpon>Activity-student.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\Activity-student.aspx.designer.cs">
+      <DependentUpon>Activity-student.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\Activity.aspx.cs">
+      <DependentUpon>Activity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\Activity.aspx.designer.cs">
+      <DependentUpon>Activity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\AdminUL\AdministrationPage.Master.cs">
+      <DependentUpon>AdministrationPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\AdminUL\AdministrationPage.Master.designer.cs">
+      <DependentUpon>AdministrationPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UL\AdminUL\Feedback.aspx.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\AdminUL\Feedback.aspx.designer.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\AdminUL\打算删掉的管理页面.aspx.cs">
+      <DependentUpon>打算删掉的管理页面.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\AdminUL\打算删掉的管理页面.aspx.designer.cs">
+      <DependentUpon>打算删掉的管理页面.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\AdminUL\CampisLiving.aspx.cs">
+      <DependentUpon>CampisLiving.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\AdminUL\CampisLiving.aspx.designer.cs">
+      <DependentUpon>CampisLiving.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\AdminUL\Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\AdminUL\Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\AdminUL\FreshmenGuide.aspx.cs">
+      <DependentUpon>FreshmenGuide.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\AdminUL\FreshmenGuide.aspx.designer.cs">
+      <DependentUpon>FreshmenGuide.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\AdminUL\ImportantNotice.aspx.cs">
+      <DependentUpon>ImportantNotice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\AdminUL\ImportantNotice.aspx.designer.cs">
+      <DependentUpon>ImportantNotice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\AdminUL\InternationalStudent.aspx.cs">
+      <DependentUpon>InternationalStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\AdminUL\InternationalStudent.aspx.designer.cs">
+      <DependentUpon>InternationalStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\AdminUL\Support.aspx.cs">
+      <DependentUpon>Support.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\AdminUL\Support.aspx.designer.cs">
+      <DependentUpon>Support.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\AdminUL\UserAccount.aspx.cs">
+      <DependentUpon>UserAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\AdminUL\UserAccount.aspx.designer.cs">
+      <DependentUpon>UserAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\Facilities-bike.aspx.cs">
+      <DependentUpon>Facilities-bike.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\Facilities-bike.aspx.designer.cs">
+      <DependentUpon>Facilities-bike.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\Facilities-food.aspx.cs">
+      <DependentUpon>Facilities-food.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\Facilities-food.aspx.designer.cs">
+      <DependentUpon>Facilities-food.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\Facilities-library.aspx.cs">
+      <DependentUpon>Facilities-library.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\Facilities-library.aspx.designer.cs">
+      <DependentUpon>Facilities-library.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\Facilities-sportshall.aspx.cs">
+      <DependentUpon>Facilities-sportshall.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\Facilities-sportshall.aspx.designer.cs">
+      <DependentUpon>Facilities-sportshall.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\Facilities.aspx.cs">
+      <DependentUpon>Facilities.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\Facilities.aspx.designer.cs">
+      <DependentUpon>Facilities.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\Feedback.aspx.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\Feedback.aspx.designer.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\FreshmenGuidance.aspx.cs">
+      <DependentUpon>FreshmenGuidance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\FreshmenGuidance.aspx.designer.cs">
+      <DependentUpon>FreshmenGuidance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\Help.aspx.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\Help.aspx.designer.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\IMPORTANTNOTICE.aspx.cs">
+      <DependentUpon>IMPORTANTNOTICE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\IMPORTANTNOTICE.aspx.designer.cs">
+      <DependentUpon>IMPORTANTNOTICE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\INArticle.aspx.cs">
+      <DependentUpon>INArticle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\INArticle.aspx.designer.cs">
+      <DependentUpon>INArticle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\InternationalStudent.aspx.cs">
+      <DependentUpon>InternationalStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\InternationalStudent.aspx.designer.cs">
+      <DependentUpon>InternationalStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\Registration.aspx.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\Registration.aspx.designer.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\Rule.aspx.cs">
+      <DependentUpon>Rule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\Rule.aspx.designer.cs">
+      <DependentUpon>Rule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\Scenery.aspx.cs">
+      <DependentUpon>Scenery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\Scenery.aspx.designer.cs">
+      <DependentUpon>Scenery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\Schoollife.aspx.cs">
+      <DependentUpon>Schoollife.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\Schoollife.aspx.designer.cs">
+      <DependentUpon>Schoollife.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\Teacher-as.aspx.cs">
+      <DependentUpon>Teacher-as.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\Teacher-as.aspx.designer.cs">
+      <DependentUpon>Teacher-as.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\Teacher-pc.aspx.cs">
+      <DependentUpon>Teacher-pc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\Teacher-pc.aspx.designer.cs">
+      <DependentUpon>Teacher-pc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\Teacher-pss.aspx.cs">
+      <DependentUpon>Teacher-pss.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\Teacher-pss.aspx.designer.cs">
+      <DependentUpon>Teacher-pss.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\Teacher.aspx.cs">
+      <DependentUpon>Teacher.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\Teacher.aspx.designer.cs">
+      <DependentUpon>Teacher.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\Testimonials.aspx.cs">
+      <DependentUpon>Testimonials.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\Testimonials.aspx.designer.cs">
+      <DependentUpon>Testimonials.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\ToDoList.aspx.cs">
+      <DependentUpon>ToDoList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\ToDoList.aspx.designer.cs">
+      <DependentUpon>ToDoList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\打算删掉的主页尝试页面.aspx.cs">
+      <DependentUpon>打算删掉的主页尝试页面.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\打算删掉的主页尝试页面.aspx.designer.cs">
+      <DependentUpon>打算删掉的主页尝试页面.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UL\UserLogin.aspx.cs">
+      <DependentUpon>UserLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UL\UserLogin.aspx.designer.cs">
+      <DependentUpon>UserLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Website.Master.cs">
+      <DependentUpon>Website.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Website.Master.designer.cs">
+      <DependentUpon>Website.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="UL\AdminUL\AdministrationPage.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="Website.Master" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53322</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44327/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
